@@ -1,0 +1,88 @@
+<!--
+ Copyright (C) 2019 Google Inc.
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<html>
+    <head>
+        <title>Emoticon Composer</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-red.min.css">
+        <link rel="stylesheet" href="./style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script src="./keyboard.js"></script>
+    </head>
+    <body>
+        <div id="topbar">
+            <h1>Emoticon Composer</h1>
+            <h2>v1.0.0</h2>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield" id="fakeresult-parent">
+            <input class="mdl-textfield__input" type="text" id="fakeresult">
+        </div>
+        <span id="rangeText">Text size (<span id="textsize">80</span>pt)</span>
+        <input class="mdl-slider mdl-js-slider" type="range"
+            min="12" max="160" value="80" tabindex="0">
+
+        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="goBold">
+            <input type="checkbox" id="goBold" class="mdl-switch__input">
+            <span class="mdl-switch__label">Bold</span>
+        </label>
+
+        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="goItalic">
+            <input type="checkbox" id="goItalic" class="mdl-switch__input">
+            <span class="mdl-switch__label">Italic</span>
+        </label>
+
+        <label class="mdl-switch mdl-js-ripple-effect" for="goColor">
+            <input type="color" id="goColor" class="mdl-switch__input">
+            <span class="mdl-switch__label">Color</span>
+        </label>
+
+        <br>
+        <div class="mdl-textfield mdl-js-textfield" id="result-parent">
+            <div id="result" contenteditable="true"></div>
+        </div>
+        <br>
+
+        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="darkTheme">
+            <input type="checkbox" id="darkTheme" class="mdl-switch__input">
+            <span class="mdl-switch__label">Dark Theme</span>
+        </label>
+
+        <footer class="mdl-mega-footer">
+            <div class="mdl-mega-footer__bottom-section">
+                <div class="mdl-logo">What is this?</div><br>
+                <p>
+                    This is a prototype of a composable glyph font to create composable expressions.
+                    You can get started by typing in your initials to see what it reveals :)
+                    Uppercase letters are eyes, lower case letters are mouths and try the numbers
+                    out for a surprise.
+                </p>
+                <p>
+                    You are welcome to copy and paste your characters;
+                    however, as this is a non-standard font, it won't render anywhere else for now.
+                    We recommend you take a screenshot ;0)
+                </p>
+                <ul class="mdl-mega-footer__link-list">
+                    <div class="mdl-logo">Questions?</div>
+                    <li>Please send thoughts, feedback, and cryptic messages to us at
+                        <a href="https://twitter.com/HandNF">@handnf</a> &amp;
+                        <a href="https://twitter.com/jenniferdaniel">@jenniferdaniel</a>.
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

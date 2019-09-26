@@ -1,0 +1,121 @@
+/**
+ * Copyright (C) 2019 Google Inc.
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+@font-face {
+    font-family: 'emoticon';
+    src: url('./fonts/emoticon-composer-Regular.ttf');
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+footer {
+    margin-top: 16px;
+}
+
+#topbar {
+    background-color: #09f;
+    box-shadow: black 0px 1px 3px 0px;
+    padding-left: 40px;
+}
+
+#topbar > h1, #topbar > h2 {
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 12pt;
+}
+
+#topbar > h1 {
+    text-transform: uppercase;
+}
+
+#topbar > h2 {
+    margin-left: 16px;
+    opacity: 0.9;
+}
+
+#result {
+    font-size: 80pt;
+    height: 100pt;
+    margin-top: 100px;
+    margin-left: 40px;
+    width: calc(100vw - 80px);
+    text-align: center;
+    background-color: inherit;
+    border: none;
+    font-family: 'emoticon';
+}
+
+#fakeresult {
+    text-align: center;
+}
+
+b {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 2em;
+}
+
+#intro {
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    margin-left: 16px;
+    margin-right: 32px;
+    padding: 6px 8px 6px 8px;
+    margin-top: 16px;
+}
+
+.mdl-switch {
+    display: inline;
+}
+
+.mdl-slider__container {
+    width: 200px;
+    display: inline-flex;
+}
+
+.mdl-slider__container, .mdl-switch, #rangeText {
+    margin-left: 24px;
+}
+
+button.character.render {
+    font-family: 'emoticon';
+    font-size: 24pt;
+}
+
+/**
+ *  Dark theme modifications
+ */
+body.dark {
+    background-color: #333;
+    color: #efefef;
+}
+
+body.dark #fakeresult, body.dark #result {
+    color: #ccc;
+}
+
+body.dark #fakeresult {
+    border-color: #ccc;
+}
+
+body.dark .mdl-slider {
+    background-color: #ccc;
+}
