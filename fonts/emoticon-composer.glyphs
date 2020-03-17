@@ -1,5 +1,5 @@
 {
-.appVersion = "1230";
+.appVersion = "1286";
 classes = (
 {
 code = "a b c d e f g h i j k l m n o p q r s t u v w x y z";
@@ -26,7 +26,7 @@ code = "a b c d e f g h i j k l m n o p q r s t u v w x y z\012a.ss01 b.ss01 c.s
 name = mouthAny;
 }
 );
-copyright = "2019";
+copyright = "2020";
 customParameters = (
 {
 name = vendorID;
@@ -137,9 +137,9 @@ unife25
 );
 }
 );
-date = "2019-09-26 20:45:11 +0000";
+date = "2020-03-17 17:02:43 +0000";
 designer = "Google Inc.";
-designerURL = "https://github.com/google/emoticon-composer";
+designerURL = "https://github.com/google/emoticon-composer-font";
 disablesNiceNames = 1;
 familyName = "emoticon-composer";
 featurePrefixes = (
@@ -8307,6 +8307,16 @@ width = 600;
 );
 instances = (
 {
+customParameters = (
+{
+name = "Disable Subroutines";
+value = 1;
+},
+{
+name = Autohint;
+value = 0;
+}
+);
 instanceInterpolations = {
 "D34BE31C-7809-4262-88A2-0EBE8205027B" = 1;
 };
@@ -8316,5 +8326,5 @@ weightClass = Normal;
 );
 unitsPerEm = 1000;
 versionMajor = 1;
-versionMinor = 0;
+versionMinor = 1;
 }
